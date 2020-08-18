@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "Items",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "TestREST",
+    "apiName": "TestREST",
+    "functionArns": [
+        {
+            "lambdaFunction": "Items"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-amplify-dev-220654-authRole",
+        "unAuthRoleName": "amplify-amplify-dev-220654-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "Items",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
